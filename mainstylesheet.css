@@ -1,0 +1,483 @@
+
+/*hexcodes i will be using #000080, #00044A, #FFBF1C, #FFD60A, #D1A309*/
+
+/*FOR THE SLIDSHOW*/
+.slideshow-container {
+    position: relative;
+    bottom: 0; /* potisitioned to the bottom */
+    width: 100%; /* make it stetch to width of screen */
+    background-color: black;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+   }
+.slide img {
+    max-width: 100%; /* make it stretch to the width of screen*/
+    height:auto; /*will go to the automatic height*/
+    max-height: 300px;
+    object-fit: contain;
+    object-position: top;
+}
+
+.fade { /*adds smooth fade */
+    animation: fadeEffect 1.5s ease-in-out; /*creates the animation */
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0.4;}
+    to { opacity: 1 ;}
+}
+
+
+/*FOR THE EMAIL*/
+
+.email-button {
+    display: inline-block;
+    padding: 10px 20px;/*padding around text */ 
+    background-color: #ffd60a;
+    color: rgb(7, 7, 7);/*color of text */
+    text-decoration: underline;/*underlines the text*/
+    border-radius: 5px; /*makes button rounded*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.email-button:hover {
+    background-color: #d1a309;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*FOR INSTAGRAM BUTTON*/
+
+.instagram-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d1a309;
+    color: white;
+    text-decoration: underline;/*underlines the text*/
+    border-radius: 5px; /*makes button rounded*/
+    font-weight: bold;        /*makes text bold*/     
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;                                                                                                                                                                                                                                                                           
+}
+.instagram-button:hover { /*this will change the effect of the color when te mouse hover*/
+    background-color: #00044a ;
+}
+
+/*FOR NAVIGATION */
+.navigation{
+    position:fixed; /*set the navigation to fixed position*/
+    top: 0px; /*positioned to the top of the page*/
+    width: 100%;/*full width of the screen*/
+    height: 60px; /*ensure navigation has is own height*/
+    background: #00044a;
+    z-index: 1000; /*keeps navigaion at top*/
+    display: flex; /*use flexbo to arrage the links horizontally*/
+    justify-content: space-evenly;/*spreads the links evenly */
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.navigation a{
+    color: #d1a309;/*set the text color to bisque*/
+    padding: 14px 20px;/*add padding around the links*/
+    text-decoration: none;/*remove the default underlin from the links*/
+
+}
+
+.navigation a:hover {
+    background: linear-gradient(to right,  #ffbf1c, #4d3d0a);/*change the background color on hover*/
+    color: black; /*change the text color to black when hovered*/
+}
+
+
+/*FOR THE TABLE ON PROGRAMS PAGE */
+table{
+    border: none;
+    width: 95%;
+    border-collapse: collapse;/*makes the tables not have an individual box but share borders */
+    border-spacing: 2ch 0; /*will set the space between table rows with the space of two 0 */
+
+
+}
+th{
+    background-color: #ffbf1c;
+    border: 2px solid #00044a;
+
+}
+
+tr{
+    border-bottom: 3px solid #00044a;
+    background-color: #bdbdf5;
+}
+.sideRow{
+    background-color: #17176e;
+    color: #fff
+    
+}
+/*.pictures{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;/this keeps it centered with margin left and margin right auto turned on/
+    width:50%;/takes up 50% of screen/
+    border-radius: 5px; /slightly rounded edges/
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /creates depth with the picture/
+
+}*/
+
+/*BODY BACKGROUND SECTION*/
+body {
+    padding-top: 50px; /*make sure to keep space away from the navigation*/
+    margin: 0;
+    background-color: #e6d089; 
+}
+
+
+/*HEADING */
+.section1Container{
+    width: 100vw;/*full viewer width */ 
+    height: 55vh;
+    background-image: url(IMG_6517.JPEG);/*place image here*/
+    background-size: cover;/* i want my image to cover entire area*/
+    background-repeat: no-repeat; /*i dont want any tiling*/
+    background-position: center ;/*center image*/
+    align-items: center;/*centers vertically*/
+    justify-content: flex-end;
+    padding-right: 5vw;
+
+}
+.section1 {
+    position:absolute; /* position it explicity on the right*/
+    right: 0; /* align to right side of screen */
+    width: 50vw; /*30% of viewport width*/
+    height: auto; /*adjust height as needed*/
+    background-color: #000080;/*navy blue background  */ 
+    color: #fff;/*white text*/
+    padding: 20px;/*adds spacing inside the box*/
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);/*shawdow*/
+    border-radius: 5px; /*slightly rounded corners */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.section1 h1 {
+    text-align: center;/*makes the h1 text become centered*/ 
+    color: #d1a515;
+    margin: 10px;/*give some margins around the text. some space*/
+    font-size: xx-large;
+}   
+.section1 p {
+    text-align: right;/* align right because it didnt look good centered or left side*/
+}
+#section1HomepageContainer {
+    width: 100vw;/*full viewer width */ 
+    height: 70vh;
+    background-image: url(IMG_6517.JPEG);/*place image here*/
+    background-size: cover;/* i want my image to cover entire area*/
+    background-repeat: no-repeat; /*i dont want any tiling*/
+    background-position: center ;/*center image*/
+    align-items: center;/*centers vertically*/
+    justify-content: flex-end;
+    padding-right: 5vw;
+
+}
+
+.headerPics {
+    display: flex; /*displays side by side*/ 
+    justify-content: flex-start; /*this means to the left */ 
+    gap: 5px; /*puts space between the images*/
+    padding: 20px;/*adds space around the row of pictures */
+    background-color: #cea211; /*trying to keep on theme with the hex colors i chose*/ 
+    justify-items: center;/* this will center the images w.in grid*/ 
+}
+
+.headerPics img{
+    width: 100px;/* read on multiple sites this makes image responsive*/
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);/*I think shadows make them look better*/
+    height: auto; /* will automatically fit into the height of the parameters around it*/
+
+}
+
+.headerPics h2 {
+    color:#0c1242; /*color of the text*/
+    display: flex;/*this will help line up with the pictures */
+    flex-direction: column; /*the same as the pictures */
+    justify-content: center;/*makes the images within the column centered*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*font type*/
+    text-shadow: 1px 1px 2px white; /*creates a white shadow*/
+}
+
+
+/*QOUTES SECTION*/
+.quotes{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*font type*/
+    font-variant: small-caps; /*makes all text small caps */
+    font-stretch: semi-condensed;/*makes the space between the text smaller */
+    font-style: oblique; /*almost italic style but not*/
+    text-shadow: 1px 1px 2px white;
+    text-align: center; /*puts text at center of the page*/
+}
+
+
+
+/* containter for the image and text for section 2 */
+.section2 {
+    display: flex;/*for horizontal layout*/
+    align-items: center;/*vertically aligns*/
+    justify-content: space-between; /* puts image left and text right*/ 
+    gap:30px;/*adds space between image and text */
+    padding: 20px;/*add space between image and text*/
+    width: 100%; /*makes sure going full length of the page*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*font type*/
+}
+/*specifically for the image*/
+.section2 img {
+    width: 40%; /* width only shown on 40 % of screen*/
+    max-width: 300px; /*image is 300 pixels */
+    height: auto;/*for aspect ratio to stay stable*/
+}
+/*specifically for the text section */
+.section2Text {
+    width:60%; /*takes up 60% of the screen*/
+    text-align: center;/*align text to center of page*/
+    font-variant: small-caps; /*has all letters in capital letters*/ 
+    font-size: large; 
+}
+
+
+
+
+/*container for the image and text for section 3 */
+.section3 {
+    display: flex; /*creates the container for the image and text*/
+    flex-direction: row-reverse; /*this reverses the order and made it so the image was on the left side of thescreen*/
+    align-items: center;/*vertically centers item */
+    justify-content: space-between; /*makes sure there is a gap between the two objects*/
+    gap: 50px; /*adds 30 px space betwen image and text*/
+    padding: 20px;/*adds 20px padding on items in container*/
+    width: 100%; /*goes full length of the page  */
+}
+.section8 h3 {
+    font-size: 27px;
+    top: 1px 1px 2px white;
+    
+}
+.section3 img {
+    margin-right: 10px; /*away from the right margin */
+    width: 300px; /*sets the image width to 300px */
+    height: auto;  /*maintains aspects ratio*/
+}
+.section3Text {
+    flex: 1; /*allows flexibility in the container*/
+    text-align: right; /*aligns text to the right*/ 
+    font-variant: small-caps; /*text in capital letters */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*font type*/
+}
+
+
+/*container and section for section 4*/
+.section4 {
+    display: flex;/*for horizontal layout*/
+    align-items: center;/*vertically aligns*/
+    justify-content: space-between; /* puts image left and text right*/ 
+    gap:30px;/*adds space between image and text */
+    padding: 20px;/*add space between image and text*/
+    width: 100%; /*makes sure going full length of the page*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*font type*/
+}
+.section4 h3 {
+    font-size: 27px;/*making font bigger with a different word usage*/
+    top: 1px 1px 2px white;
+    
+}
+.section4 img {
+    margin-right: 10px; /*away from the right margin */
+    width: 300px; /*sets the image width to 300px */
+    height: auto;  /*maintains aspects ratio*/
+}
+
+.section4Text {
+    width:60%; /*takes up 60% of the screen*/
+    text-align: center;/*align text to center of page*/
+    font-variant: small-caps; /*has all letters in capital letters*/ 
+    font-size: large;
+}
+
+/*section 5 container and image*/
+.section5 {
+    display: flex; /*creates the container for the image and text*/
+    flex-direction: row-reverse; /*this reverses the order and made it so the image was on the left side of thescreen*/
+    align-items: center;/*vertically centers item */
+    justify-content: space-between; /*makes sure there is a gap between the two objects*/
+    gap: 50px; /*adds 30 px space betwen image and text*/
+    padding: 20px;/*adds 20px padding on items in container*/
+    width: 100%; /*goes full length of the page  */
+}
+.section5 h3 {
+    font-size: 27px;/*making font bigger with a different word usage*/
+    top: 1px 1px 2px white;
+    
+}
+.section5 img {
+    margin-right: 10px; /*away from the right margin */
+    width: 300px; /*sets the image width to 300px */
+    height: auto;  /*maintains aspects ratio*/
+}
+
+.section5Text {
+    flex: 1; /*allows flexibility in the container*/
+    text-align: right; /*aligns text to the right*/ 
+    font-variant: small-caps; /*text in capital letters */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*font type*/
+}
+
+/*section 6 container and image*/
+.section6 {
+    display: flex;/*for horizontal layout*/
+    align-items: center;/*vertically aligns*/
+    justify-content: space-between; /* puts image left and text right*/ 
+    gap:30px;/*adds space between image and text */
+    padding: 20px;/*add space between image and text*/
+    width: 100%; /*makes sure going full length of the page*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*font type*/
+}
+.section6 h3 {
+    font-size: 27px; /*making font bigger with a different word usage*/
+    top: 1px 1px 2px white;
+    
+}
+.section6 img {
+    margin-right: 10px; /*away from the right margin */
+    width: 300px; /*sets the image width to 300px */
+    height: auto;  /*maintains aspects ratio*/
+}
+
+.section6Text {
+    width:60%; /*takes up 60% of the screen*/
+    text-align: center;/*align text to center of page*/
+    font-variant: small-caps; /*has all letters in capital letters*/ 
+    font-size: large;
+}
+
+
+/*SECTION 7 CONTAINER AND IMAGE*/
+.section7 {
+    display: flex; /*creates the container for the image and text*/
+    flex-direction: row-reverse; /*this reverses the order and made it so the image was on the left side of thescreen*/
+    align-items: center;/*vertically centers item */
+    justify-content: space-between; /*makes sure there is a gap between the two objects*/
+    gap: 50px; /*adds 30 px space betwen image and text*/
+    padding: 20px;/*adds 20px padding on items in container*/
+    width: 100%; /*goes full length of the page  */
+}
+
+.section7 h3 {
+    font-size: 27px;/*making font bigger with a different word usage*/
+    top: 1px 1px 2px white;
+    
+}
+.section7 img {
+    margin-right: 10px; /*away from the right margin */
+    width: 300px; /*sets the image width to 300px */
+    height: auto;  /*maintains aspects ratio*/
+}
+
+.section7Text {
+    flex: 1; /*allows flexibility in the container*/
+    text-align: right; /*aligns text to the right*/ 
+    font-variant: small-caps; /*text in capital letters */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*font type*/
+}
+
+/*SECTION 8 CONTAINER AND IMAGE*/
+.section8 {
+    display: flex; /*creates the container for the image and text*/
+    flex-direction: row-reverse; /*this reverses the order and made it so the image was on the left side of thescreen*/
+    align-items: center;/*vertically centers item */
+    justify-content: space-between; /*makes sure there is a gap between the two objects*/
+    gap: 50px; /*adds 30 px space betwen image and text*/
+    padding: 20px;/*adds 20px padding on items in container*/
+    width: 100%; /*goes full length of the page  */
+}
+.section8 h3 {
+    font-size: 27px;/*making font bigger with a different word usage*/
+    top: 1px 1px 2px white;
+    
+}
+.section8 img {
+    margin-right: 10px; /*away from the right margin */
+    width: 300px; /*sets the image width to 300px */
+    height: auto;  /*maintains aspects ratio*/
+}
+
+.section8Text {
+    width:60%; /*takes up 60% of the screen*/
+    text-align: center;/*align text to center of page*/
+    font-variant: small-caps; /*has all letters in capital letters*/ 
+    font-size: large;/*using text to describe font size vs number*/                     
+}
+
+/*SECTION 9 ABOUT US SECTION*/
+.section9 {
+    display: flex; /*layouts flexbox*/
+    flex-wrap: wrap;/*allows text or image to use the space below */
+    justify-content: space-between;/*puts space between items*/
+    padding: 20px; /*adds padding inside of box */
+    margin-bottom: 20px; /*puts extra space below section*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*font type*/
+
+}
+.section9 h3 {
+    width: 100%; /*takes up entire width of page*/
+    font-size: 24px; /*using a different metric to try for font size instead of xx-small ect*/
+    margin-bottom: 15px; /*adds space below*/
+    color: #0c1242; /*color of text*/
+    text-shadow: 1px 1px 2px white;/*text shadow*/
+}
+.section9 ul {
+    flex: 1 1 60%; /*flex properties */
+    list-style-type: disc; /*uses bullets for the list type */
+    padding-left: 20px;/*adds padding to the left*/
+    margin: 0;/*Not default margin*/
+}
+
+.section9 li {
+    margin-bottom: 10px;/*adds space between bullet points*/
+    line-height: 2;/*this makes the height a certian height */
+
+}
+.section9 aside{
+    flex:1 1 30%; /*flex properities*/
+    padding: 15px; /*adds padding on all sides*/
+    margin-top: 20px; /*adds padding above the aside */
+}
+.section aside ul {
+    list-style-type: none; /*removes bullet*/
+    padding-left: 0; /*takes away defualt padding*/
+    margin: 0;/*removes default margin*/
+}
+.section9 li {
+    margin-bottom: 10px;/*adding space below*/
+}
+
+.section9 a{
+    display: inline-block; /*allows to stay in the same spot no matter the height */
+    color: #ffd60a; /*Text color*/
+    background-color: #17176e;/*background color*/
+    padding: 14px 20px; /*adds padding around the link*/
+    text-decoration: none; /*takes away underline*/ 
+    border-radius: 5px; /*makes button round */
+    list-style-type: none;/*removes bullet */
+}
+.section9 a:hover {
+    background-color: #00044a;
+    color:#fff;
+}
+
+/*SECTION 10 */
+.section10 {
+    text-align: center;/*make the text centered */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*font type*/
+
+}
+.section10 h3 {
+    font-size: 30px;/*making font bigger with a different word usage*/
+    text-shadow: 1px 1px 2px white;
+}
